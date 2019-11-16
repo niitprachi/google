@@ -1,0 +1,190 @@
+html {
+    font: normal 10px 'Conv_BrownLight Regular', arial, sans-serif;
+    color: #ffffff;  
+}
+
+body {
+    color: white;
+}
+
+body, ul {
+    margin: 0;
+}
+  
+h1, h2, h3, h4, h5 {
+    margin: 0; 
+}
+  
+ul{
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    /* background: rgb(241, 116, 189); */
+    background: white;
+    font-size: 1.8rem;
+}
+
+.menu {
+    padding: 40px 0;
+}
+
+.menu .col-sm-8 {
+    text-align: right;
+    padding-top: 25px;
+}
+
+.menu .col-sm-8 a {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mb-4, .my-4 {
+     margin-bottom: 0;
+}
+
+.hero-banner .col-sm-12 {
+    background: url(../images/nature-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.about-us {
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.about-us .col-sm-12 img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.about-us .col-sm-12 h2 {
+    display: table-caption;
+    font-size: 2.0rem;
+    color: purple;
+    padding: 5px 0 20px 10px;
+}
+
+.about-us .col-sm-12 p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.reviews {
+    background: #83467b;
+    padding: 40px 0;
+    position: relative;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* .reviews .icon {
+    display: none;
+} */
+
+.reviews .col-md-6 {
+    position: relative;
+}
+
+.reviews .col-md-6 a {
+    display: block;
+}
+
+.reviews .image {
+    border: 5px solid black;
+}
+
+.reviews .icon {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.reviews h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+.reviews h5 {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+ .reviews .show-more {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+.reviews .btn-less,
+.reviews .btn-more {
+    border: 1px solid black;
+    background: white;
+    border-radius: 6px;
+    padding: 10px;
+    color: #83467b;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.reviews .btn-less {
+    display: none;
+}
+
+footer {
+    background: black;
+    padding: 40px 0;
+    color: white;
+}
+
+footer .col-md-7 h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+footer .col-md-7 address {
+    font-size: 1.6rem;
+    padding-top: 10px;
+}
+
+footer .col-md-5 a {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+footer .col-md-5 a:first-child {
+    padding-left: 0;
+}
+
+
+footer .col-md-5 a:last-child {
+    padding-right: 0;
+}
+
+
+
+
