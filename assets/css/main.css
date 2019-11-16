@@ -11,9 +11,9 @@ body, ul {
     margin: 0;
 }
   
-h1, h2, h3, h4, h5 {
+/* h1, h2, h3, h4, h5 {
     margin: 0; 
-}
+} */
   
 ul{
     padding: 0;
@@ -60,23 +60,34 @@ a {
     margin: 0 auto;
     padding: 40px 0;
 }
-.about-us .col-sm-12 img {
-    float: left;
-    height: 100px;
-    width: 100px;
+
+.google-day {
+max-width: 350px;
+margin: 0 auto;
 }
 
-.about-us .col-sm-12 h2 {
+.google-day a {
+    float: left;
+}
+
+.google-day::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.google-day h2 {
     display: table-caption;
     font-size: 2.0rem;
     color: purple;
-    padding: 5px 0 20px 10px;
+    padding: 5px 0 10px 10px;
+    margin-left: 15px;
 }
 
 .about-us .col-sm-12 p {
     font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
@@ -94,10 +105,6 @@ a {
     margin-bottom: 10px;
 }
 
-/* .reviews .icon {
-    display: none;
-} */
-
 .reviews .col-md-6 {
     position: relative;
 }
@@ -107,12 +114,12 @@ a {
 }
 
 .reviews .image {
-    border: 5px solid black;
+    border: 3px solid white;
 }
 
 .reviews .icon {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 45%;
 }
 
@@ -121,17 +128,19 @@ a {
     font-weight: bold;
     font-size: 1.6rem;
     text-transform: capitalize;
+    margin-top: 10px;
 }
 
 .reviews h5 {
     font-size: 1.4rem;
     text-transform: capitalize;
     color: white;
+    margin-top: 2px;
 }
 
- .reviews .show-more {
+ /* .reviews .show-more {
     display: none;
-}
+} */
 
 .active {
     display: inline-block;
@@ -139,15 +148,15 @@ a {
 
 .reviews .btn-less,
 .reviews .btn-more {
-    border: 1px solid black;
+    border: 1px solid purple;
     background: white;
     border-radius: 6px;
-    padding: 10px;
+    padding: 10px 20px;
     color: #83467b;
     font-size: 1.8rem;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 30px auto 0;
 }
 
 .reviews .btn-less {
