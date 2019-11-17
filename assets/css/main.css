@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot');
+    src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 html {
     font: normal 10px 'Conv_BrownLight Regular', arial, sans-serif;
     color: #ffffff;  
@@ -111,16 +139,28 @@ margin: 0 auto;
 
 .reviews .col-md-6 a {
     display: block;
+    position: relative;
 }
 
 .reviews .image {
     border: 3px solid white;
 }
 
-.reviews .icon {
+/* .reviews .icon {
     position: absolute;
     top: 35%;
     left: 45%;
+} */
+
+.icon-youtube:before {
+    content: "\ea9d";
+    font-size: 3rem;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
 }
 
 .reviews h4 {
@@ -169,28 +209,28 @@ footer {
     color: white;
 }
 
-footer .col-md-7 h3 {
+footer .contact-us h3 {
     font-size: 2.5rem;
     text-transform: capitalize;
 }
 
-footer .col-md-7 address {
+footer .contact-us address {
     font-size: 1.6rem;
     padding-top: 10px;
 }
 
-footer .col-md-5 a {
+footer .social-media a {
     padding-left: 10px;
     padding-right: 10px;
     display: inline-block;
 }
 
-footer .col-md-5 a:first-child {
+footer .social-media a:first-child {
     padding-left: 0;
 }
 
 
-footer .col-md-5 a:last-child {
+footer .social-media a:last-child {
     padding-right: 0;
 }
 
