@@ -28,22 +28,18 @@
 
 html {
     font: normal 10px 'Conv_BrownLight Regular', arial, sans-serif;
-    color: #ffffff;  
+    /* color: #ffffff;   */
 }
 
 body {
-    color: white;
+    color: #000;
 }
 
 body, ul {
     margin: 0;
 }
   
-/* h1, h2, h3, h4, h5 {
-    margin: 0; 
-} */
-  
-ul{
+ul {
     padding: 0;
 }
 
@@ -52,37 +48,85 @@ a {
 }
 
 .menu {
-    /* background: rgb(241, 116, 189); */
     background: white;
     font-size: 1.8rem;
-}
-
-.menu {
     padding: 40px 0;
 }
 
-.menu .col-sm-8 {
+.logo {
+    margin-left: 16px;
+}
+
+.menu .navbar-nav {
     text-align: right;
     padding-top: 25px;
 }
 
-.menu .col-sm-8 a {
+.menu .navbar-nav li {
     padding-left: 5px;
     padding-right: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menu .navbar-nav .nav-link {
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 1s;
+    border-radius: 6px;
+}
+
+.menu .nav-link:hover {
+    background: #83467b;
+    transition: all 1s;
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background: url('../images/burger-menu.png') no-repeat 0 0;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
 }
 
 .mb-4, .my-4 {
-     margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-.hero-banner .col-sm-12 {
+/* .hero-banner .col-sm-12 {
     background: url(../images/nature-bg.jpg) no-repeat 0 0;
     background-size: cover;
     min-height: 400px;
+} */
+/* 
+.slick-prev, 
+.slick-next {
+    width: 30px;
+} */
+.slick-prev {
+    left: 10px;
+    z-index: 1;
 }
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: #ffffff;
+    /* font-size: 30px; */
+}
+
+/* .slick-prev {
+    left: -40px;
+}
+
+.slick-next {
+    right: -40px;
+} */
 
 .about-us {
     margin: 0 auto;
@@ -90,8 +134,8 @@ a {
 }
 
 .google-day {
-max-width: 350px;
-margin: 0 auto;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 .google-day a {
@@ -107,7 +151,7 @@ margin: 0 auto;
 .google-day h2 {
     display: table-caption;
     font-size: 2.0rem;
-    color: purple;
+    color:#83467b;
     padding: 5px 0 10px 10px;
     margin-left: 15px;
 }
@@ -117,6 +161,7 @@ margin: 0 auto;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 0;
+    color: black;
 }
 
 .reviews {
@@ -130,7 +175,7 @@ margin: 0 auto;
     font-size: 30px;
     color: white;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .reviews .col-md-6 {
@@ -146,16 +191,13 @@ margin: 0 auto;
     border: 3px solid white;
 }
 
-/* .reviews .icon {
-    position: absolute;
-    top: 35%;
-    left: 45%;
-} */
-
 .icon-youtube:before {
     content: "\ea9d";
     font-size: 3rem;
-    color: red;
+}
+
+.reviews .icon-youtube:before {
+    color: #f00;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -178,13 +220,44 @@ margin: 0 auto;
     margin-top: 2px;
 }
 
- /* .reviews .show-more {
-    display: none;
-} */
-
-.active {
-    display: inline-block;
+.reviews a span {
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 1s;
 }
+
+.reviews a:hover span {
+    /* display: block; */
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#myModal .modal-dialog {
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 50%;
+    margin: 0 auto;
+}
+
+.modal-content .close {
+    text-align: right;
+    background: red;
+    margin-left: 498px;
+    position: absolute;
+    top: -20px;
+    padding: 3px 5px 5px;
+    color: #ffffff;
+}
+
+ .reviews .hide-row {
+    display: none;
+}
+
+/* 
+.active {
+    display: block;
+} */
 
 .reviews .btn-less,
 .reviews .btn-more {
@@ -228,7 +301,6 @@ footer .social-media a {
 footer .social-media a:first-child {
     padding-left: 0;
 }
-
 
 footer .social-media a:last-child {
     padding-right: 0;
